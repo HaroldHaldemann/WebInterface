@@ -1,0 +1,21 @@
+.semi-screen
+{
+    display: flex;
+    border: 2px solid;
+    background-color: #62757f;
+}
+
+.semi-screen-left
+{
+    display: flex;
+    width: 50%;
+}
+
+.quarter-screen-left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    width: 33%;
+}

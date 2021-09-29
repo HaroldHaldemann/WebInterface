@@ -1,21 +1,140 @@
-.semi-screen
-{
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.header-container {
     display: flex;
+    height: 64px;
     border: 2px solid;
     background-color: #62757f;
 }
 
-.semi-screen-left
-{
+.semi-screen-container {
     display: flex;
     width: 50%;
 }
 
-.quarter-screen-left
+.logo 
 {
+    height: 100%;
+    width: auto;
+}
+
+.block-text {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 24px;
     width: 33%;
+    margin: 10px;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.img-container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: #ccc;
+}
+
+.multi-carousel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-carousel {
+    font-size: 32px;
+    justify-content: center;
+}
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.card {
+    width: 512px;
+    border: 2px solid #ccc;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.card .img {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 256px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    position: absolute;
+    cursor: pointer;
+}
+
+.nav .prev {
+    display: none;
+}
+
+.nav .prev.show {
+    display: block;
+    left: 32px;
+}
+
+.nav .next {
+    right: 32px;
+}
+
+.nav .next.hide {
+    display: none;
 }
